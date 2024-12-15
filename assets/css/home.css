@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-60);
+    color: #ffffff;
+}
+
+h1 {
+    background-color: var(--color-10);
+    padding: 20px 40px;
+    border-radius: 99999px;
+}
