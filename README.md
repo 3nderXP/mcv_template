@@ -1,10 +1,10 @@
-# MVC Template para Projetos em PHP
+# MVC Template for PHP projects
 
-Este repositório serve como um template base para projetos em PHP, implementando o padrão **MVC**, sistema de **Rotas**, **Middlewares**, e **Componentização** nas camadas de Controller e View. Ele também inclui diversas ferramentas utilitárias para agilizar o desenvolvimento.
+This repository serves as a base model for PHP projects, implementing the **MVC** pattern, **Routes** system, **Middlewares** and **Componentization** in the Controller and View layers. It also includes several utility tools to speed up development.
 
 ---
 
-## Estrutura do Projeto
+## Project Structure
 
 ```plaintext
 mvc_template/
@@ -56,57 +56,57 @@ mvc_template/
 └── README.md
 ```
 
-## Funcionalidades
+## Features
 
 
-| Conceito        | Descrição                                                                 |
-|-----------------|---------------------------------------------------------------------------|
-| **MVC**         | Organização modular entre lógica (Model), controle (Controller) e visualização (View). |
-| **Rotas**       | Configuradas em `app/Core/Routers.php`, permitem associar URLs a métodos de controladores. |
-| **Middlewares** | Gerenciam verificações antes da execução das rotas.                       |
-| **Componentização** | Reutilização de elementos visuais e lógicos, como Links e Scripts.       |
-| **Utilitários** | Classes para manipulação de arrays, upload de arquivos, geração de UUIDs, e mais. |
+| Conceito            | Descrição                                                                 |
+|---------------------|---------------------------------------------------------------------------|
+| **MVC**             | Modular organization between logic (Model), control (Controller) and visualization (View). |
+| **Routes**          | Configured in `app/Core/Routers.php`, they allow you to associate URLs with controller methods. |
+| **Middlewares**     | Manage checks before executing routes. |
+| **Componentization** | Reuse of visual and logical elements, such as Links and Scripts. |
+| **Utilities** | Classes for manipulating arrays, uploading files, generating UUIDs, and more. |
 
 
-## Instalação
+## Installation
 
-- Clone este repositório:
+- Clone this repository:
 
 ```bash
 git clone https://github.com/3nderXP/mvc_template.git
 ```
 
-- Instale as dependências:
+- Install the dependencies:
 
 ```bash
 composer install
 ```
 
-- Configure o ambiente:
+- Configure the environment:
 
-Altere as variáveis necessárias, como credenciais de banco de dados, raizes e afins.
+Change necessary variables, such as database credentials, roots and the like.
 
-## Uso
+## Usage
 
-**Rotas:** Configure as rotas no arquivo `app/Core/Routers.php`:
+**Rotas:** Configure routes in the file `app/Core/Routers.php`:
 ```php
 $router->get('/home', [HomeController::class, 'index']);
 ```
 
-**Controllers:** Crie controladores em `app/Core/Controller/Pages/`` e implemente métodos associados às rotas.
+**Controllers:** Create Controllers in `app/Core/Controller/Pages/`` and implement methods associated with routes.
 
-**Views:** Crie arquivos HTML em `app/Core/View/Pages/` e renderize-os no controlador:
+**Views:** Create HTML files in `app/Core/View/Pages/` and render in the controllers:
 
 ```php
 return View::render('Pages/Home', ['data' => $value]);
 ```
 
-## Requisitos:
+## Requirements:
 - PHP >= 8.0
 - Composer
 
-## Licença
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-## Contribuições
-Contribuições são bem-vindas! Abra issues ou envie pull requests com melhorias e sugestões.
+## Contributions
+Contributions are welcome! Open issues or send pull requests with improvements and suggestions.
