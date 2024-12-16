@@ -88,7 +88,7 @@ Change necessary variables, such as database credentials, roots and the like.
 
 ## Usage
 
-**Rotas:** Configure routes in the file `app/Core/Routers.php`:
+**Routes:** Configure routes in the file `app/Core/Routers.php`:
 ```php
 $router->get('/home', [HomeController::class, 'index']);
 ```
